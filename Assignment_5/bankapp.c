@@ -36,7 +36,7 @@ int main(int argc, char *argv[]){
 	char *date = argv[3];
 	char *amount = argv [4];
 
-	//No file exists
+	//If file exists
 	FILE *readFile = fopen("bankdata.csv", "r");
         if (readFile == NULL) {
                 fprintf(stderr,"Error, unable to locate the data file bankdata.csv\n");
@@ -101,6 +101,7 @@ int main(int argc, char *argv[]){
 	}
 }
 
+//Verifies if String only contains integers
 int isInteger(char *s) {
         while (*s) {
                 if (isdigit(*s++) == 0)
@@ -109,12 +110,13 @@ int isInteger(char *s) {
     return 1;
 }
 
+//Verifies if date is input in the form YYYY-MM-DD
 int isDate(char *s) {
 	for (i = 0; i <= 3; i++) {
 		if (s[i] < '0' || s[i] > '9') return 0; //Not a number
 	}
 
-	if (s[4] != '-' && s[7] != '-') return 0;
+	if (s[4] != '-' && s[7] != '-') return 0; //Must have hyphens
 	
 	for (i = 5; i <= 6; i++) {
                 if (s[i] < '0' || s[i] > '9') return 0; //Not a number
@@ -128,6 +130,11 @@ int isDate(char *s) {
 	return 1; //Otherwise it is a valid date
 }
 
+
+/*
+* addAccount Function which first verifies if an account with accNum exists, if not then error (50). 
+* Otherwise, it succesfully adds a line to the datafile indicating new account, with the name of client.
+*/
 int addAccount(char *acctNum, char *name, FILE *appendFile, FILE *readFile) {
 	//Check if AC acctnum already exists
 	fgets(array,99,readFile);
@@ -145,6 +152,10 @@ int addAccount(char *acctNum, char *name, FILE *appendFile, FILE *readFile) {
 	return 0;
 }
 
+/*
+* deposit Function which first verifies if an account with accNum exists, if not then error (50). 
+* Otherwise, it succesfully adds a line to the datafile indicating the deposit's accNum, date and amount.
+*/
 int deposit(char *acctNum, char *date, char *amount, FILE *appendFile, FILE *readFile){
 	//Check if AC acctnum already exists
         fgets(array,99,readFile);
@@ -163,6 +174,11 @@ int deposit(char *acctNum, char *date, char *amount, FILE *appendFile, FILE *rea
         exit(50);
 }
 
+/*
+* withdraw Function which first verifies if an account with accNum exists, if not then error (50). Then calculates the total
+* balance of the account. If the withdrawal request exceeds the total balance of the account, error is given (60). 
+* Otherwise, it succesfully adds a line to the datafile indicating the withdrawal's accNum, date, and amount.
+*/
 int withdraw(char *acctNum, char *date, char *amount, FILE *appendFile, FILE *readFile) {
 	//Reset transaction value to 0
 	transaction = 0;
