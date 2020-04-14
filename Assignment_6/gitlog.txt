@@ -1,0 +1,71 @@
+commit 3de5590b62140c06979ef1f540fe8bbba74b7238
+Author: Arneet KALRA <akalra4@teaching.CS.McGill.CA>
+Date:   Mon Apr 13 19:21:49 2020 -0400
+
+    Fixed header files, made Makefile
+
+commit 6c82a525e5bea01558dbaa9b99d1ca642c466582
+Author: Arneet KALRA <akalra4@teaching.CS.McGill.CA>
+Date:   Mon Apr 13 19:09:20 2020 -0400
+
+    Fixed powi function
+
+commit 0f2a414367aff8c851622df591a5e2c7be5e1aee
+Author: Arneet KALRA <akalra4@teaching.CS.McGill.CA>
+Date:   Mon Apr 13 19:07:07 2020 -0400
+
+    Done evaluatePolynomial()
+
+commit 5a654ff93f82daed31196f7e486cf0db1750e432
+Author: Arneet KALRA <akalra4@teaching.CS.McGill.CA>
+Date:   Mon Apr 13 18:30:23 2020 -0400
+
+    Dislpay and add completly done
+
+commit 879d1a6ca7546927ccc21bdd21cd83eaab97ca60
+Author: Arneet KALRA <akalra4@teaching.CS.McGill.CA>
+Date:   Mon Apr 13 13:49:01 2020 -0400
+
+    Done addPolyTerm
+
+commit c287481876a87301e01d2d6de517a5d7f141512f
+Author: Arneet KALRA <akalra4@teaching.CS.McGill.CA>
+Date:   Mon Apr 13 12:57:07 2020 -0400
+
+    Added poly.h file
+
+commit b61c8d8baa1024f7f18883f65cca4e8e5823fce4
+Author: Arneet KALRA <akalra4@teaching.CS.McGill.CA>
+Date:   Mon Apr 13 12:33:37 2020 -0400
+
+    Modified parse
+
+commit 4fd5349fb42def75150aa6e1fd041d429015a4e8
+Author: Arneet KALRA <akalra4@teaching.CS.McGill.CA>
+Date:   Sat Apr 11 12:33:32 2020 -0400
+
+    Added poly.c function outlines
+
+commit c0a50789be550bb2daeb2268b49f3d0aac430cbe
+Author: Arneet KALRA <akalra4@teaching.CS.McGill.CA>
+Date:   Sat Apr 11 12:02:09 2020 -0400
+
+    Added utils header file
+
+commit 437b0d1cfea62b2a3d88c294e6ec6d52bbcbc6fc
+Author: Arneet KALRA <akalra4@teaching.CS.McGill.CA>
+Date:   Sat Apr 11 11:09:56 2020 -0400
+
+    Added powi in utils.c
+
+commit a13ca3de7a136c8c934bea626a5ec500e1e90eb6
+Author: Arneet KALRA <akalra4@teaching.CS.McGill.CA>
+Date:   Sat Apr 11 10:55:00 2020 -0400
+
+    Checked data file exists, read line at a time
+
+commit 4d81de531c97aedf78e252845ac8757e9142bb13
+Author: Arneet KALRA <akalra4@teaching.CS.McGill.CA>
+Date:   Thu Apr 9 21:29:59 2020 -0400
+
+    Initial Commit of all Files
